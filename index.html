@@ -24,22 +24,10 @@
         <h1>Contact AI Stroke Analysis</h1>
         <p>Upload your MRI images and get in touch with us for expert analysis.</p>
         
-        <!-- Contact Form -->
-        <form id="contact-form" action="https://formspree.io/f/xkgwbqnb" method="POST" enctype="multipart/form-data">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <label for="file">Upload MRI Image:</label>
-            <input type="file" id="file" name="file" accept="image/*" required>
-
-            <button type="submit">Send Message</button>
-        </form>
+        <!-- JotForm Form -->
+        <div id="form-container">
+            <script type="text/javascript" src="https://form.jotform.com/jsform/242231720124037"></script>
+        </div>
 
         <!-- Loading Spinner -->
         <div id="loading-spinner" style="display:none;">
