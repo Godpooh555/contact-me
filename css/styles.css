@@ -1,34 +1,64 @@
+/* General Body Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f0f0f0; /* Light grey background for a clean look */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
     margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* Particles Background */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send particles behind content */
+}
+
+/* Parallax Container */
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Adjust as needed */
+}
+
+/* Parallax Background */
+.parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Main Container */
 .container {
     background-color: #fff;
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    max-width: 500px;
+    max-width: 600px; /* Center and adjust width */
+    margin: 0 auto; /* Center horizontally */
     text-align: center;
+    position: relative; /* Ensure it stays within view */
+    z-index: 1; /* Ensure it stays on top of background */
 }
 
+/* Headings */
 h1 {
     margin-bottom: 20px;
     font-size: 2.5em;
     color: #333;
 }
 
+/* Paragraphs */
 p {
     font-size: 1.1em;
     color: #777;
     margin-bottom: 30px;
 }
 
+/* Form Labels */
 label {
     display: block;
     text-align: left;
@@ -37,18 +67,22 @@ label {
     color: #555;
 }
 
+/* Form Inputs */
 input, textarea {
-    width: 100%;
+    width: calc(100% - 22px); /* Adjust width for padding */
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in width */
 }
 
+/* File Input */
 input[type="file"] {
     padding: 0;
 }
 
+/* Submit Button */
 button {
     background-color: #007bff;
     color: #fff;
@@ -64,7 +98,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Loading spinner styles */
+/* Loading Spinner */
 #loading-spinner {
     position: fixed;
     top: 50%;
