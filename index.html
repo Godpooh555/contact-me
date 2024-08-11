@@ -5,21 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact AI Stroke Analysis</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/parallax-js@1.5.0/dist/parallax.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <!-- Particles background -->
-    <div id="particles-js"></div>
-
-    <!-- Parallax scrolling section -->
-    <div class="parallax-container">
-        <div class="parallax" data-parallax="scroll" data-image-src="images/background-image.jpg"></div>
-    </div>
-
     <div class="container">
         <h1>Contact AI Stroke Analysis</h1>
-        <p>Upload your MRI images and get in touch with us for expert analysis.</p>
+        <p>We offer free analysis of MRI photos to detect Ischemic Stroke using advanced AI technology. Please fill out the form below to upload your MRI image and contact us.</p>
+
         <form id="contact-form" action="https://formspree.io/f/xkgwbqnb" method="POST" enctype="multipart/form-data">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -43,17 +34,7 @@
     </div>
 
     <!-- Include JavaScript -->
-    <script src="js/smooth-scrolling.js"></script>
-    <script src="js/particle-background.js"></script>
-    <script src="js/loading-animation.js"></script>
     <script src="js/form-validation.js"></script>
-
-    <script>
-        // Initialize Parallax
-        document.addEventListener('DOMContentLoaded', function() {
-            var parallax = document.querySelectorAll('.parallax');
-            new Parallax(parallax);
-        });
-    </script>
+    <script src="js/loading-animation.js"></script>
 </body>
 </html>
